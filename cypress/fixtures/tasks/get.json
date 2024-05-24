@@ -1,0 +1,30 @@
+{
+  "list": {
+    "user": {
+      "name": "Charles Xavier",
+      "email": "xavier@xmen.com",
+      "password": "123456"
+    },
+    "tasks": [
+      {
+        "name": "Estud4r Javascript",
+        "tags": ["js"]
+      },
+      {
+        "name": "Estud4r Typescrips",
+        "tags": [
+          "typescript",
+          "ts"
+        ]
+      },
+      {
+        "name": "Estud4r cypress",
+        "tags": [
+          "cypress",
+          "javascript",
+          "nodejs"
+        ]
+      }
+    ]
+  }
+}

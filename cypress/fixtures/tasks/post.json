@@ -1,0 +1,27 @@
+{
+  "create": {
+    "user": {
+      "name": "Pedro Europeu",
+      "email": "pedro@yahoo.com",
+      "password": "123456"
+    },
+    "task": {
+      "name": "Pagar fatura do meu cartão",
+      "tags": [
+        "nubank",
+        "smiles",
+        "ourocard"
+      ]
+    }
+  },
+  "dup": {
+    "user": {
+      "name": "Jean Grey",
+      "email": "fenix@xmen.com",
+      "password": "123456"
+    },
+    "task": {
+      "name": "Fazer compras no Mercado"
+    }
+  }
+}
