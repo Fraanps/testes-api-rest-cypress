@@ -1,8 +1,8 @@
 {
     "create": {
         "user": {
-            "name": "Cecília Europeu",
-            "email": "cecilia@yahoo.com",
+            "name": "Pedro Europeu",
+            "email": "pedro@yahoo.com",
             "password": "123456"
         },
         "task": {
@@ -13,5 +13,20 @@
                 "ourocard"
             ]
         }
+    },
+
+    "dup": {
+        "user": {
+            "name": "Jean Grey",
+            "email": "fenix@xmen.com",
+            "password": "123456"
+        },
+        "task": {
+            "name": "Fazer compras no Mercado"
+        }
     }
+
+    
+    
+    
 }
