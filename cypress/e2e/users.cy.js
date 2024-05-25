@@ -14,7 +14,7 @@ describe('POST /users', () => {
     const user = this.users.create
 
     // deletando o usuário antes do teste de cadastro
-    cy.task('deleteUser', user.email)
+    cy.task('removeUser', user.email)
 
     cy.postUser(user)
       .then(response => {
@@ -28,7 +28,7 @@ describe('POST /users', () => {
     const user = this.users.duplicate_email
 
     // deletando o usuário antes do teste de cadastro
-    cy.task('deleteUser', user.email)
+    cy.task('removeUser', user.email)
     cy.postUser(user) // cdastrando o mesmo usuário para ter o email duplicado
 
     cy.postUser(user)

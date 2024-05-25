@@ -12,14 +12,14 @@ describe('POST /tasks', () => {
         const { user, task } = this.tasks.create
 
         // deletando e criando o usuário
-        cy.task('deleteUser', user.email)
+        cy.task('removeUser', user.email)
         cy.postUser(user)
 
         // fazendo login
         cy.postSession(user)
             .then(userResp => {
                 // excluindo a task caso já exista
-                cy.task('deleteTask', task.name, user.email)
+                cy.task('removeTask', task.name, user.email)
 
                 cy.postTask(task, userResp.body.token)
                     .then(response => {
@@ -38,7 +38,7 @@ describe('POST /tasks', () => {
         const { user, task } = this.tasks.dup
 
         // deletando e criando o usuário
-        cy.task('deleteUser', user.email)
+        cy.task('removeUser', user.email)
         cy.postUser(user)
 
         // fazendo login

@@ -8,7 +8,9 @@
     "tasks": [
       {
         "name": "Estud4r Javascript",
-        "tags": ["js"]
+        "tags": [
+          "js"
+        ]
       },
       {
         "name": "Estud4r Typescrips",
@@ -26,5 +28,30 @@
         ]
       }
     ]
+  },
+  "unique": {
+    "user": {
+      "name": "Tonny Stark",
+      "email": "tonny@stark.com",
+      "password": "123456"
+    },
+    "task": {
+      "name": "Construir a Mark87",
+      "tags": [
+        "ark",
+        "nanotech",
+        "friday"
+      ]
+    }
+  },
+  "task_not_found": {
+    "user": {
+      "name": "Bruce Banner",
+      "email": "hulk@stark.com",
+      "password": "123456"
+    },
+    "task": {
+      "name": "Construir uma máquina de radiação gama"
+    }
   }
 }

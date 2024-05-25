@@ -9,7 +9,7 @@ describe('POST /sessions', () => {
     it('user session', function(){
         const userData = this.users.login
 
-        cy.task('deleteUser', userData.email) // deletando o usuário caso já exista
+        cy.task('removeUser', userData.email) // deletando o usuário caso já exista
         cy.postUser(userData) // criando o usuário
 
         cy.postSession(userData)

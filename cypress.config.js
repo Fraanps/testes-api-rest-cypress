@@ -1,33 +1,33 @@
-const { defineConfig } = require("cypress");
-const { connect } = require('./cypress/support/mongo')
+const {defineConfig} = require ("cypress");
+const {connect} = require ('./cypress/support/mongo')
 
-module.exports = defineConfig({
+module.exports = defineConfig ({
   e2e: {
     async setupNodeEvents(on, config) {
       // implement node event listeners here
 
       // const de acesso ao banco dedados
-      const db = await connect()
+      const db = await connect ()
 
       // função para deletar usuários do banco de dados
-      on('task', {
-        async deleteUser(email) {
-          const users = db.collection('users')
-          await users.deleteMany({ email: email })
+      on ('task', {
+        async removeUser(email) {
+          const users = db.collection ('users')
+          await users.deleteMany ({email: email})
           return null
         },
 
-        async deleteTask(taskName, emailUser) {
-          const users = db.collection('users')
-          const user = users.findOne({ email: 89 })
-          const tasks = db.collection('tasks')
-          await tasks.deleteMany({ name: taskName, user: user._id })
+        async removeTask(taskName, emailUser) {
+          const users = db.collection ('users')
+          const user = users.findOne ({email: 89})
+          const tasks = db.collection ('tasks')
+          await tasks.deleteMany ({name: taskName, user: user._id})
           return null
 
         },
-        async deleteTasksLike(key) {
-          const tasks = db.collection('tasks')
-          await tasks.deleteMany({ name: {$regex: key} })
+        async removeTasksLike(key) {
+          const tasks = db.collection ('tasks')
+          await tasks.deleteMany ({name: {$regex: key}})
           return null
 
         }
