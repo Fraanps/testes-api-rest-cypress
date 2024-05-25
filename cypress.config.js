@@ -33,6 +33,8 @@ module.exports = defineConfig ({
         }
       })
     },
-    baseUrl: 'http://localhost:3333'
+    baseUrl: 'http://localhost:3333',
+    video: false, // para não criar a pasta com os videos
+    screenshotOnRunFailure: false // não tirar screenshot
   },
 });
